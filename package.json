@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./app.js",
+    "deploy":"gcloud app deploy --project myGoogleProject123",
+    "dispatch":"gcloud app deploy dispatch.yaml --project myGoogleProject123"
   },
   "author": "",
   "license": "ISC",

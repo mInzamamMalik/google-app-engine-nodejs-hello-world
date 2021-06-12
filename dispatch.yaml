@@ -1,0 +1,9 @@
+dispatch:
+    - url: "myabcdomain.com/*"
+      service: default
+    
+    - url: "app.myabcdomain.com/*"
+      service: myservice-frontend
+    
+    - url: "api.myabcdomain.com/*"
+      service: myservice-apis
